@@ -21,9 +21,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <View
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/circles"/>
+            android:id="@+id/flash_enabler"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:background="@drawable/flashoff"/>
 
     </LinearLayout>
 
@@ -135,6 +136,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <View
+                android:id="@+id/shoot"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:background="@drawable/white_btn"
@@ -145,16 +147,17 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <View
+            <ImageView
                 android:id="@+id/change_orientation"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginEnd="36dp"
-                android:background="@drawable/white_btn"
+                android:background="@drawable/change"
                 android:padding="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:importantForAccessibility="no" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
